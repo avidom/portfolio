@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <meta name="ad.size" content="width=240,height=400">
-<title>n1_240x400</title>
+<title>vit1_240x400_html5</title>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&amp;subset=cyrillic" rel="stylesheet">
 <style type="text/css">
 .back {
@@ -22,13 +22,14 @@
 }
 </style>
 
-<script src="https://s0.2mdn.net/ads/studio/cached_libs/createjs_2015.11.26_54e1c3722102182bb133912ad4442e19_min.js"></script>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/easeljs_0.8.1_58add2e69ca7fbe25e8f82a2b5f6a510_min.js"></script>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenjs_0.6.1_40840f08e9fb382ae9e4a337da542ed5_min.js"></script>
 <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_1.18.0_56fa823cfbbef1c2f4d4346f0f0e6c3c_min.js"></script>
-<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.19.0_643d6911392a3398cb1607993edabfa7_min.js"></script>
 <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_1.18.0_ed5816e732515f56d96a67f6a2a15ccb_min.js"></script>
-<script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinelite_1.19.0_13e3bd0e510d63fd5e5ef9bf9dac7017_min.js"></script>
-<script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_1.19.0_4cba7b163d6263b39d53727ed4c7bb6f_min.js"></script>
-<script src="n1_240x400.js"></script>
+<script src="js/movieclip-0.8.1.min.js"></script>
+<script src="js/preloadjs-0.6.1.min.js"></script>
+<script src="js/TimelineLite.min.js"></script>
+<script src="vit1_240x400_html5.js"></script>
 <script>
 var canvas, stage, exportRoot;
 function init() {
@@ -48,7 +49,7 @@ function handleFileLoad(evt) {
 }
 
 function handleComplete(evt) {
-	exportRoot = new lib.n1_240x400();
+	exportRoot = new lib.vit1_240x400_html5();
 
 	stage = new createjs.Stage(canvas);
 	stage.addChild(exportRoot);

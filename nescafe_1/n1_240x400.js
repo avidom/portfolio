@@ -1290,20 +1290,6 @@ p.nominalBounds = new cjs.Rectangle(-53.8,-14.4,107.6,28.9);
 p.nominalBounds = new cjs.Rectangle(-15.3,-13.6,30.7,27.4);
 
 
-(lib.link = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// Layer 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#FFFFFF").s().p("AuDXcMAAAgu3IcHAAMAAAAu3g");
-	this.shape._off = true;
-
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(3).to({_off:false},0).wait(1));
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = null;
-
-
 (lib.CompoundPath = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
@@ -4779,7 +4765,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 		this.stop();
 		
 		var count = 1;
-		var repeat = 2;
+		var repeat = 200;
 		    time1 = 3.5;
 			time2 = time1 + 3.8;
 			time3 = time2 + 3.5;
@@ -4933,25 +4919,6 @@ p.nominalBounds = new cjs.Rectangle(-188.2,-226,368.5,462);
 // stage content:
 (lib.n1_240x400 = function(mode,startPosition,loop) {
 if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
-
-	// timeline functions:
-	this.frame_0 = function() {
-		this.btn.addEventListener("click", fl_ClickToGoToWebPage);
-		
-		function fl_ClickToGoToWebPage() {
-			window.open(window.clickTag, "_blank");
-		}
-	}
-
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
-
-	// link_for_GDN
-	this.btn = new lib.link();
-	this.btn.setTransform(120,200,1.333,1.333);
-	new cjs.ButtonHelper(this.btn, 0, 1, 2, false, new lib.link(), 3);
-
-	this.timeline.addTween(cjs.Tween.get(this.btn).wait(1));
 
 	// mask (mask)
 	var mask = new cjs.Shape();
