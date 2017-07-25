@@ -11,10 +11,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	webfonts: {},
 	manifest: [
-		{src:"images/pic1.png", id:"_1"},
-		{src:"images/pic2.png", id:"_2"},
 		{src:"images/icons.png", id:"icons"},
-		{src:"images/kv.png", id:"kv"}
+		{src:"images/kv.png", id:"kv"},
+		{src:"images/pic1.png", id:"pic1"},
+		{src:"images/pic2.png", id:"pic2"}
 	]
 };
 
@@ -31,18 +31,6 @@ lib.webfontAvailable = function(family) {
 
 
 
-(lib._1 = function() {
-	this.initialize(img._1);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,235,231);
-
-
-(lib._2 = function() {
-	this.initialize(img._2);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,235,231);
-
-
 (lib.icons = function() {
 	this.initialize(img.icons);
 }).prototype = p = new cjs.Bitmap();
@@ -53,6 +41,18 @@ p.nominalBounds = new cjs.Rectangle(0,0,146,26);
 	this.initialize(img.kv);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,240,275);
+
+
+(lib.pic1 = function() {
+	this.initialize(img.pic1);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,235,231);
+
+
+(lib.pic2 = function() {
+	this.initialize(img.pic2);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,235,231);
 
 
 (lib.Symbol46 = function(mode,startPosition,loop) {
@@ -776,7 +776,7 @@ p.nominalBounds = new cjs.Rectangle(-83.9,-23.3,167.8,46.6);
 	this.timeline.addTween(cjs.Tween.get(this.c1).wait(1));
 
 	// Layer 2
-	this.instance = new lib._2();
+	this.instance = new lib.pic2();
 	this.instance.setTransform(-117,0);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -829,7 +829,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.ic1},{t:this.ic2},{t:this.ic3},{t:this.ic4}]}).wait(1));
 
 	// Layer 1
-	this.instance = new lib._1();
+	this.instance = new lib.pic1();
 	this.instance.setTransform(-117,0);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
