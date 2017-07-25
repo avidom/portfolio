@@ -11,8 +11,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	webfonts: {},
 	manifest: [
-		{src:"images/_1.png", id:"_1"},
-		{src:"images/_2.png", id:"_2"},
+		{src:"images/pic1.png", id:"_1"},
+		{src:"images/pic2.png", id:"_2"},
 		{src:"images/icons.png", id:"icons"},
 		{src:"images/kv.png", id:"kv"}
 	]
